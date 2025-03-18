@@ -1,0 +1,11 @@
+html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    --primary: #fffbf7;
+    --secondary: #1e0a08;
+    --accent: #256af6;
+    background-color: var(--primary);
+  }
+
