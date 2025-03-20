@@ -1,0 +1,183 @@
+<section class="intro-section">
+  <h2 class="intro-heading">Sammen skaber vi en tryggere tilværelse</h2>
+  <p class="intro-subheading">Vi planlægger og støtter fantastiske projekter, der skaber nye livsmuligheder for udsatte unge og hjemløse, så de kan få en bedre og tryggere fremtid.</p>
+
+  <div class="card-container">
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/steen-og-frederikke.jpg" alt="Netværksvenner" class="card-image" />
+        <h3>Netværksvenner</h3>
+        <p>I netværksvenner skaber vi meningsfulde relationer mellem frivillige og vores brugere.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/Madklub-Toften-21.09.23-15_square.jpg" alt="Sociale madklubber" class="card-image" />
+        <h3>Sociale madklubber</h3>
+        <p>Vi skaber rammen for god mad, samlingspunkt for hyggelige måltider og socialt samvær.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/NorMaria-LGBTvenner-6_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>LGBT+ venner</h3>
+        <p>Vores LGBT+ er med til at bryde ensomheden gennem meningsfulde relationer.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/BF3I5685_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>Aktivitetsklubber</h3>
+        <p>I aktivitetsklubben mødes frivillige, hjemløse og socialt udsatte til fælles oplevelser.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/Gitte-Sofie-Hansen-Oekonomiraadgivning-4_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>Økonomirådgivning</h3>
+        <p>Vores økonomiske rådgivning er akkrediteret af RådgivningsDanmark, og varetages af frivillige indenfor den finansielle sektor.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/Khidir-4_Ved-sin-hoveddoer-til-opgangen_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>Møbelhjælp</h3>
+        <p>I møbelhjælpen giver vi den tidligere hjemløse en tryg start. Vores frivillige hjælper med at indrette boligen, så stedet føles som deres eget hjem.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/Gitte-Sofie-Hansen-Yoga_F1A8956_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>Yoga</h3>
+        <p>Vores frivillige yogainstruktører skaber trygge rum, hvor hjemløse og socialt udsatte kan dyrke yoga i fællesskab</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+
+    <div>
+      <div class="clip-container"></div>
+      <article class="card">
+        <img src="https://staging.hjemloes.dk/wp-content/uploads/2025/03/Charlotte_Ranneries_peer_square.jpg" alt="LGBT+ venner" class="card-image" />
+        <h3>Peer-to-peer</h3>
+        <p>I vores netværksindsats, peer-to-peer, deler tidligere hjemløse deres erfaringer med nuværende hjemløse.</p>
+        <a href="#">Læs mere...</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Overall layout */
+  .intro-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .intro-heading {
+    font-size: 2.2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-subheading {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    margin-bottom: 6rem;
+  }
+
+  /* ------------------------------------------ */
+  /* FLEX LAYOUT for smaller screens (default)  */
+  /* ------------------------------------------ */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* flex-wrap: nowrap; Prevent cards from wrapping */
+    gap: 1.5rem;
+    height: 620px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden;
+    /* scroll-snap-type: x mandatory; Optional snap effect */
+    -webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS */
+    padding-bottom: 1rem; /* Space for scrollbar */
+  }
+
+  .card {
+    flex: 0 0 280px; /* Fixed width: prevents shrinking */
+    min-width: 280px; /* Ensure card doesn't get smaller than 280px */
+    scroll-snap-align: start;
+    background-color: #f2ebe5; /* Card background color */
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: -25px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Style for the image in the card */
+  .card-image {
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    margin-bottom: 1rem; /* Space between the image and the heading */
+  }
+
+  /* Hide scrollbar (optional) */
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Card text styling */
+  .card h3 {
+    font-family: "Lalezar", sans-serif; /* Use Lalezar font for h3 */
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--secondary);
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+  }
+
+  .card a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black; /* Changed link color to black */
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  .clip-container {
+    background-image: url("../assets/clip.png");
+    height: 127px;
+    width: 108px;
+    position: relative;
+    margin: auto;
+  }
+</style>
