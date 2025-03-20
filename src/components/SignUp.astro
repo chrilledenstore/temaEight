@@ -92,14 +92,14 @@ import "../css/globalstyling.css";
 <style>
      .tilmelding {
           display: flex;
-          padding: 0 8rem;
+          /* flex-direction: column-reverse; */
+          padding: 10rem;
           align-items: center;
           justify-content: space-between;
           gap: 4rem;
      }
      div.img {
           width: 90%;
-          background-color: #256AF6;
           & img.lazy {
                width: 100%;
                height: 550px;
@@ -187,6 +187,27 @@ import "../css/globalstyling.css";
      .volunteer-btn:hover {
           color: var(--primary);
           background-color: var(--secondary);
+     }
+
+     @media (width < 768px) {
+          .tilmelding {
+               display: flex;
+               flex-direction: column-reverse;
+          }
+          div.img {
+               width: 100%;
+               & img.lazy {
+                    width: 100%;
+                    height: auto;
+                    object-fit:cover;
+               }
+          }
+                    
+          .form {
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+          }
      }
 
 </style>
