@@ -1,5 +1,6 @@
 ---
 import FrivilligKnap from "./FrivilligKnap.astro";
+import Header from "./Header.astro";
 ---
 
 <!doctype html>
@@ -15,7 +16,9 @@ import FrivilligKnap from "./FrivilligKnap.astro";
   <body>
     <!-- <h1 class="title"><span>THE MOST COMPLETE</span> <br />CSS GRID SYSTEM</h1> -->
     <header class="header">
-      <section class="hero">
+      <Header />
+      <!-- <section class="hero">
+	   
         <article>
           <h1>Hjælp de hjemløse Gør en forskel</h1>
           <FrivilligKnap />
@@ -34,7 +37,7 @@ import FrivilligKnap from "./FrivilligKnap.astro";
           <h2>Fordele</h2>
           <p>Gør en forskel, skab relationer og få støtte samt kurser.</p>
         </article>
-      </section>
+      </section> -->
     </header>
 
     <main class="main"></main>
@@ -125,7 +128,7 @@ import FrivilligKnap from "./FrivilligKnap.astro";
   }
 
   /* HERO SEKTION */
-
+  /* 
   .hero {
     background-image: url("../assets/heroimg.svg");
     background-size: cover;
@@ -195,7 +198,7 @@ import FrivilligKnap from "./FrivilligKnap.astro";
     display: grid;
   } */
 
-  @media (width > 716px) {
+  /* @media (width > 716px) {
     .hero {
       background-position: 0;
       width: 100%;
@@ -219,5 +222,5 @@ import FrivilligKnap from "./FrivilligKnap.astro";
       padding-top: 40px;
       padding-bottom: 40px;
     }
-  }
+  } */
 </style>

@@ -1,0 +1,121 @@
+---
+import FrivilligKnap from "./FrivilligKnap.astro";
+---
+
+<section class="hero">
+  <article>
+    <h1>Hjælp de hjemløse Gør en forskel</h1>
+    <FrivilligKnap />
+  </article>
+</section>
+<section class="advice_section">
+  <article class="purpose_section">
+    <h2>Formål</h2>
+    <p>Hjælpe hjemløse og udsatte med støtte, fælleskab og trivsel.</p>
+  </article>
+  <article class="purpose_section">
+    <h2>Forventninger</h2>
+    <p>Vær tålmodig, stabil og brug 4-6 timer om måneden.</p>
+  </article>
+  <article class="purpose_section">
+    <h2>Fordele</h2>
+    <p>Gør en forskel, skab relationer og få støtte samt kurser.</p>
+  </article>
+</section>
+
+<style>
+  .hero {
+    background-image: url("../assets/heroimg.svg");
+    background-size: cover;
+    background-position: 70%;
+    width: 100%;
+    height: 550px;
+  }
+
+  .hero article {
+    color: var(--primary);
+    width: 260px;
+    padding-top: 300px;
+    margin-left: 60px;
+  }
+
+  .hero article h1 {
+    font-family: var(--anton);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .advice_section {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding-top: 2em;
+    padding-right: 90px;
+    padding-left: 60px;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6em;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .advice_section::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .advice_section article {
+    min-width: 290px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .advice_section article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .advice_section article p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  /* .purpose_section {
+    display: grid;
+    margin: auto;
+  } */
+
+  /* .expect_section {
+    display: grid;
+  }
+
+  .advantage_section {
+    display: grid;
+  } */
+
+  @media (width > 716px) {
+    .hero {
+      background-position: 0;
+      width: 100%;
+      height: 650px;
+    }
+
+    .hero article {
+      width: 400px;
+      padding-top: 320px;
+      margin-left: 100px;
+    }
+
+    .hero article h1 {
+      font-family: var(--anton);
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .advice_section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+</style>
