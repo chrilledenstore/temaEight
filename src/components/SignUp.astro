@@ -1,0 +1,163 @@
+---
+// const modal = document.querySelector('#modal');
+// const openModal = document.querySelector('.open-button');
+// const closeModal = document.querySelector('.close-button');
+
+
+
+
+---
+
+<section class="container">
+     <section class="tilmelding">
+          <div>
+               <h2>Meld dig som frivillig nu!</h2>
+               <p>Tænk, hvis du kunne gøre en forskel - give varme, støtte 
+                    og håb til dem, der har allermest brug for det. 
+                    Som frivillig hjælper du hjemløse med mad, tryghed og en vej til en bedre fremtid.
+               </p>
+               <!-- <button class="btn open-button">Bliv frivillig</button> -->
+               <button class="btn button open-button">Login</button>
+          </div>
+          <div class="popup">
+               <div class="close-button">&times</div>
+               <div class="form">
+                    <h2>Login</h2>
+               </div>
+          </div>
+          <!-- <div class="modal" id="modal"> -->
+               <!-- <h3>Adress</h3>
+               <p>Avenida Maximo Gomez</p>
+               <button class="button close-button">close modal</button> -->
+          <!-- </div> -->
+          <div class="img">
+               <img class="lazy img-responsive img-progressive img-outside ratio-94x40 size-a loaded" src="https://weshelter.dk/wp-content/framework/cache-image/khidir-4ved-sin-hoveddoer-til-opgangen-1-1150x489.jpg" width="1150" height="489" alt="Bliv frivillig" style="display: block;">
+          </div>
+     </section>
+
+     <!-- <dialog class="modal" id="modal"> -->
+          <div class="frivillig-form">
+               <!-- Title section -->
+               <div class="title">Bliv frivillig</div>
+               <div class="content">
+                    <!-- Registration form -->
+                    <form action="#" class="form" method="dialog">
+                    <div class="user-details">
+                      <!-- Input for Fulde navn -->
+                      <div class="input-box">
+                        <!-- <span class="details">Fulde navn</span> -->
+                        <input type="text" placeholder="Indtast dit fulde navn" required>
+                      </div>
+                      <!-- Input for Telefonnummer -->
+                      <div class="input-box">
+                        <!-- <span class="details">Telefonnummer</span> -->
+                        <input type="number" placeholder="Indtast dit telefonnummer" required>
+                      </div>
+                      <!-- Input for Email -->
+                      <div class="input-box">
+                        <!-- <span class="details">E-mail</span> -->
+                        <input type="text" placeholder="Indtast din mail adresse" required>
+                      </div>
+                      <!-- Input for Postnummer -->
+                      <div class="input-box">
+                        <!-- <span class="details">Postnummer</span> -->
+                        <input type="number" placeholder="Indtast dit postnummer" required>
+                      </div>
+                         <div class="dropdown">
+                           <h3>Hvad vil du hjælpe med?</h3>
+                           <button class="button">Se valgmuligheder</button>
+                           <div class="mulighederne">
+                               <p>Madklubber</p>
+                               <p>Økonomirådgivning</p>
+                               <p>Aktivitetsklubber</p>
+                               <p>Yoga</p>
+                               <p>Møbelhjælp</p>
+                               <p>Netværksvenner</p>
+                               <p>Peer-to-peer</p>
+                               <p>LGBT+ venner</p>
+                               <p>Massage</p>
+                               <p>Aktivitetsleder</p>
+                           </div>
+                         <p>Du kan læse mere om de forskellige indsatser ved 
+                              artiklerne på siden!</p>
+                      </div>
+                                          <!-- Input for Yderligere spørgsmål -->
+                      <div class="input-box">
+                         <!-- <span class="details">Yderligere spørgsmål</span> -->
+                         <input type="text" placeholder="Yderligere spørgsmål til os?" required>
+                      </div>
+                      <!-- Send button -->
+                      <!-- <button class="btn close-button">Send</button> -->
+                    </div>
+                 </form>
+               </div>
+          </div>
+     </dialog>
+</section>
+
+<style>
+     * {
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Open Sans";
+     }
+     .container {
+          padding: 8rem;
+     }
+     h2 {
+          font-size: 3rem;
+     }
+     p {
+          font-size: 1rem;
+     }
+     /* Frivillig section */
+     .tilmelding {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          /* min-height: 100vh;
+          width: 80%; */
+          /* padding: 8rem; */
+          gap: 4rem;
+     }
+     .btn {
+          border: none;
+          border-radius: 40px;
+          font-weight: 800;
+          font-size: 1.3rem;
+          padding: 12px 30px;
+          margin-top: 20px;
+          transition: transform 0.15s ease-in-out;
+          align-items: center;
+          color: #F5F2EF;
+          background-color: #256AF6;
+     }
+     .btn:hover {
+          font-weight: 900;
+          color: #F5F2EF;
+          background-color: #0F172A;
+          transform: scale(1.05);
+     }
+
+     div.img {
+          width: 80%;
+          background-color: #256AF6;
+          & img.lazy {
+               width: 100%;
+               height: 450px;
+               object-fit:cover;
+          }
+     }
+     /* Pop-up Vindue */
+     /* .modal {
+          padding: 1em;
+          max-width: 70ch;
+     } */
+     /* Dropdown */
+     .dropdown {
+          position: relative;
+          display: inline-block;
+     }
+
+
+</style>

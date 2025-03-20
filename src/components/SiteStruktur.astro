@@ -1,3 +1,7 @@
+---
+import SignUp from "./SignUp.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -17,6 +21,10 @@
 		<main class="main">
 			MAIN
 			<!-- <section class="">Main cont.</section> -->
+			 
+			<!-- Frivillig tilmelding -->
+			<SignUp></SignUp>
+			
 		</main>
 		<footer class="footer">
 			FOOTER
@@ -77,21 +85,21 @@ a {
 	cursor: pointer;
 }
 button {
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	cursor: pointer;
 }
 body {
 	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+	height: 100%;
 
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	/* grid-template-columns: 1fr 5fr 1fr; */
+	grid-template-columns: auto;
 	grid-template-rows: 60px auto auto;
 	grid-template-areas:
-		"header header header"
-		"main main main"
-		"footer footer footer";
+		"header"
+		"main"
+		"footer";
 }
 .header {
 	grid-area: header;
