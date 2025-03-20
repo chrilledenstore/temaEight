@@ -90,6 +90,7 @@
   .intro-section {
     max-width: 1200px;
     margin: 2rem auto;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 0 1rem;
   }
@@ -115,7 +116,7 @@
     grid-template-columns: repeat(9, 1fr);
     /* flex-wrap: nowrap; Prevent cards from wrapping */
     gap: 1.5rem;
-    height: 620px;
+    height: 650px;
     overflow-x: auto; /* Enables horizontal scrolling */
     overflow-y: hidden;
     /* scroll-snap-type: x mandatory; Optional snap effect */
@@ -124,6 +125,9 @@
   }
 
   .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
     flex: 0 0 280px; /* Fixed width: prevents shrinking */
     min-width: 280px; /* Ensure card doesn't get smaller than 280px */
     scroll-snap-align: start;
@@ -179,5 +183,11 @@
     width: 108px;
     position: relative;
     margin: auto;
+  }
+
+  @media (width < 768px) {
+    .intro-section {
+      margin-bottom: 6rem;
+    }
   }
 </style>
