@@ -12,288 +12,182 @@ import "../css/globalstyling.css";
 // });
 ---
 
-<section class="container">
-     <section class="tilmelding">
+<section class="tilmelding">
+     <!-- Titel og tekst -->
+     <div class="container">
           <div>
                <h2>Meld dig som frivillig nu!</h2>
                <p>Tænk, hvis du kunne gøre en forskel - give varme, støtte 
                     og håb til dem, der har allermest brug for det. 
                     Som frivillig hjælper du hjemløse med mad, tryghed og en vej til en bedre fremtid.
                </p>
-               <FrivilligKnap class="btn button open-button"></FrivilligKnap>
-               <!-- <button class="btn open-button">Bliv frivillig</button> -->
           </div>
-          <!-- <div class="popup" id="show-login">
-               <div class="close-btn">&times</div>
-               <h2>Log in</h2>
-               <div class="form">
-                    <div class="form-element">
-                         <label for="email">Email</label>
-                         <input type="text" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="form-element">
-                         <label for="password">Password</label>
-                         <input type="password" id="password" placeholder="Enter password">
-                         <button>Send</button>
-                    </div>
-               </div>
-          </div> -->
-
-          <div class="popup" id="show-login">
-               <div class="close-btn">&times</div>
-               <h2>Log in</h2>
-               <div class="form">
-                    <div class="form-element">
-                         <label for="email">Email</label>
-                         <input type="text" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="form-element">
-                         <label for="password">Password</label>
-                         <input type="password" id="password" placeholder="Enter password">
-                         <button>Send</button>
-                    </div>
-               </div>
-          </div>
-          
-          <!-- <div class="modal" id="modal"> -->
-               <!-- <h3>Adress</h3>
-               <p>Avenida Maximo Gomez</p>
-               <button class="button close-button">close modal</button> -->
-          <!-- </div> -->
-          <div class="img">
-               <img class="lazy img-responsive img-progressive img-outside ratio-94x40 size-a loaded" src="https://weshelter.dk/wp-content/framework/cache-image/khidir-4ved-sin-hoveddoer-til-opgangen-1-1150x489.jpg" width="1150" height="489" alt="Bliv frivillig" style="display: block;">
-          </div>
-     </section>
-
-     <!-- <dialog class="modal" id="modal"> -->
-          <div class="popup">
-               <!-- Title section -->
-               <h2 class="title">Bliv frivillig</h2>
-               <div class="form">
-                    <div class="form-element">
+          <div class="form-box">
+               <h3 class="title">Bliv frivillig</h3>
+               <div class="form-container">
                     <!-- Registration form -->
                     <form action="#" class="form" method="dialog">
-                    <div class="user-details">
-                      <!-- Input for Fulde navn -->
-                      <div class="input-box">
-                        <!-- <span class="details">Fulde navn</span> -->
-                        <input type="text" placeholder="Indtast dit fulde navn" required>
-                      </div>
-                      <!-- Input for Telefonnummer -->
-                      <div class="input-box">
-                        <!-- <span class="details">Telefonnummer</span> -->
-                        <input type="number" placeholder="Indtast dit telefonnummer" required>
-                      </div>
-                      <!-- Input for Email -->
-                      <div class="input-box">
-                        <!-- <span class="details">E-mail</span> -->
-                        <input type="text" placeholder="Indtast din mail adresse" required>
-                      </div>
-                      <!-- Input for Postnummer -->
-                      <div class="input-box">
-                        <!-- <span class="details">Postnummer</span> -->
-                        <input type="number" placeholder="Indtast dit postnummer" required>
-                      </div>
-                      </div>
-                      <div class="form-element">
-                         <div class="dropdown">
-                           <h3>Hvad vil du hjælpe med?</h3>
-                           <select class="button">Se valgmuligheder
-                              <option>Madklubber</option>
-                              <option>Økonomirådgivning</option>
-                              <option>Aktivitetsklubber</option>
-                              <option>Yoga</option>
-                              <option>Møbelhjælp</option>
-                              <option>Netværksvenner</option>
-                              <option>Peer-to-peer</option>
-                              <option>LGBT+ venner</option>
-                              <option>Massage</option>
-                              <option>Aktivitetsleder</option>
-                           </select>
-                           
-                         <p>Du kan læse mere om de forskellige indsatser ved 
-                              artiklerne på siden!</p>
-                      </div>
-                                          <!-- Input for Yderligere spørgsmål -->
-                      <div class="input-box">
-                         <!-- <span class="details">Yderligere spørgsmål</span> -->
-                         <input type="text" placeholder="Yderligere spørgsmål til os?" required>
-                      </div>
-                      </div>
-                      <!-- Send button -->
-                      <!-- <button class="btn close-button">Send</button> -->
-                    </div>
-                 </form>
+                         <div class="user-details">
+                              <!-- Input for Fulde navn -->
+                              <div class="input-box">
+                                   <span class="details">Fulde navn *</span>
+                                   <input type="text" placeholder="" required>
+                              </div>
+                              <!-- Input for Telefonnummer -->
+                              <div class="input-box">
+                                   <span class="details">Telefonnummer *</span>
+                                   <input type="tel" placeholder="" required>
+                              </div>
+                              <!-- Input for Email -->
+                              <div class="input-box">
+                                   <span class="details">E-mail *</span>
+                                   <input type="text" placeholder="" required>
+                              </div>
+                              <!-- Input for Postnummer -->
+                              <div class="input-box">
+                                   <span class="details">Postnummer *</span>
+                                   <input type="number" placeholder="" required>
+                              </div>
+                         </div>
+
+                         <div class="form-element">
+                              <div class="dropdown">
+                                   <h4>Hvad vil du hjælpe med?</h4>
+                                   <select class="dropdown-button">Se valgmuligheder
+                                        <option>...</option>
+                                        <option>Madklubber</option>
+                                        <option>Økonomirådgivning</option>
+                                        <option>Aktivitetsklubber</option>
+                                        <option>Yoga</option>
+                                        <option>Møbelhjælp</option>
+                                        <option>Netværksvenner</option>
+                                        <option>Peer-to-peer</option>
+                                        <option>LGBT+ venner</option>
+                                        <option>Massage</option>
+                                        <option>Aktivitetsleder</option>
+                                   </select>
+                                   <p-1>Du kan læse mere om de forskellige indsatser ved artiklerne på siden!</p-1>
+                              </div>
+                              <div>
+                                   <!-- Input for Yderligere spørgsmål -->
+                                   <h4>Yderligere spørgsmål til os?</h4>
+                                   <div class="input-box">
+                                        <!-- <span class="details">Yderligere spørgsmål</span> -->
+                                        <input type="text" placeholder="" required>
+                                   </div>
+                                   <button class="volunteer-btn">Insend</button>
+                              </div>
+                         </div>
+                    </form>
                </div>
           </div>
-     </dialog>
+     </div>
+     <div class="img">
+          <img class="lazy img-responsive img-progressive img-outside ratio-94x40 size-a loaded" src="https://weshelter.dk/wp-content/framework/cache-image/khidir-4ved-sin-hoveddoer-til-opgangen-1-1150x489.jpg" width="1150" height="489" alt="Bliv frivillig" style="display: block;">
+     </div>
 </section>
 
+
+<!-- CSS -->
 <style>
-     * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Open Sans";
-     }
-     .container {
-          padding: 8rem;
-     }
-     h2 {
-          font-size: 3rem;
-     }
-     p {
-          font-size: 1rem;
-     }
-     /* Frivillig section */
      .tilmelding {
           display: flex;
+          padding: 0 8rem;
           align-items: center;
           justify-content: space-between;
-          /* min-height: 100vh;
-          width: 80%; */
           gap: 4rem;
      }
-     /* .btn {
-          border: none;
-          border-radius: 40px;
-          font-weight: 800;
-          font-size: 1.3rem;
-          padding: 12px 30px;
-          margin-top: 20px;
-          transition: transform 0.15s ease-in-out;
-          align-items: center;
-          color: #F5F2EF;
-          background-color: #256AF6;
-     }
-     .btn:hover {
-          font-weight: 900;
-          color: #F5F2EF;
-          background-color: #0F172A;
-          transform: scale(1.05);
-     }
-           */
-
      div.img {
-          width: 80%;
+          width: 90%;
           background-color: #256AF6;
           & img.lazy {
                width: 100%;
-               height: 450px;
+               height: 550px;
                object-fit:cover;
           }
      }
-     /* Pop-up Vindue */
-     /* .modal {
-          padding: 1em;
-          max-width: 70ch;
-     } */
 
-      .center{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+     /* Form structure */
+     .form-box {
+          margin-top: 20px;
+          display: grid;
+          gap: 10px;
      }
-     
-     .center-button {
-          padding: 10px 20px;
-          font-size: 15px;
-          color: #222;
-          background: #f5f5f5;
-          border: none;
-          outline: none;
-          border-radius: 5px;
-          cursor: pointer;
-     }
-     .popup {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: auto;
-          padding: 20px 30px;
-          background: #fff;
-          box-shadow: 2px #3a3a3a;
-          border-radius: 10px;
 
-          /* opacity: 0;
-          transform: translate(-50%, -50%) scale(1.25);
-          transition: top 0ms ease-in-out 200ms,
-                      opacity 200ms ease-in-out 0ms,
-                      transform 20ms ease-in-out 0ms; */
-     }
-     .popup.active {
-          top: 50%;
-          opacity: 1;
-          transform: translate(-50%, -50%) scale(1);
-          transition: top 0ms ease-in-out 0ms,
-                      opacity 200ms ease-in-out 0ms,
-                      transform 20ms ease-in-out 0ms;
-     }
-     .popup .close-btn {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          width: 20px;
-          height: 20px;
-          background: #3a3a3a;
-          color: #fff;
-          text-align: center;
-          line-height: 22px;
-          border-radius: 25px;
-          cursor: pointer;
-     }
      .form {
           display: flex;
-          margin: 30px;
-          gap: 6rem;
+          gap: 50px;
      }
-     /* .popup .form h3{} */
-     .popup .form .form-element {
-          margin: 15px 0px;
-          /* display: grid; */
-          /* align-items: top; */
-          
-          label {
-               font-size: 1rem;
-               color: #222;
-          }
-          input {
-               margin-top: 5px;
-               display: block;
-               width: 100%;
-               padding: 8px;
-               outline: none;
-               border-radius: 5px;
-               border-color: #3a3a3a;
-               color: #3a3a3a;
-          }
-          & button {
-               margin-top: 20px;
-               background-color: var(--accent);
-               color: white;
-               border: none;
-               padding: 12px 24px;
-               font-family: var(--work-sans);
-               font-size: 18px;
-               font-weight: bold;
-               border-radius: 20px;
-               cursor: pointer;
-               transition: background-color 0.3s;
-             }
-          button:hover {
-               background-color: var(--primary);
-               color: var(--secondary);
-          }
+     
+     /* Inputs and Labels */
+     .user-details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+     }
+     .input-box {
+          margin-bottom: 15px;
+     }
+     input {
+          width: 100%;
+          margin-top: 5px;
+          padding: 6px;
+          background-color: var(--light-primary);
+          border-radius: 30px;
+          border-width: 1px;
      }
 
      /* Dropdown */
-     .dropdown {
-          position: relative;
-          display: inline-block;
+     .dropdown-button {
+          display: block;
+          margin-bottom: 10px;
+          width: 60%;
+          margin-top: 5px;
+          padding: 5px;
+          background-color: var(--light-primary);
+          border-radius: 30px;
+          border-width: 1px;
+     }
+     option {
+          font-size: 0.9rem;
+          color: var(--light-primary);
+          background-color: var(--secondary);
      }
 
+     p-1 {
+          width: 60%;
+          font-size: 1rem;
+
+     }
+
+     .form-element {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;  
+     }
+
+     /* Button */
+     .volunteer-btn {
+          background-color: var(--accent);
+          color: white;
+          border: none;
+          margin: 10px 0;
+          padding: 12px 30px;
+          font-family: var(--Anton);
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+     }
+
+     .volunteer-btn:hover {
+          color: var(--primary);
+          background-color: var(--secondary);
+     }
 
 </style>
 
