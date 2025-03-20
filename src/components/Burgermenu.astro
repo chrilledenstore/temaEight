@@ -1,9 +1,10 @@
-<div class="burger">
+<label for="menu-toggle" class="burger">
   <div></div>
   <div></div>
   <div></div>
-</div>
-<nav class="menu" id="global_menu">
+</label>
+<input type="checkbox" id="menu-toggle" />
+<nav class="menu">
   <a href="#">Få hjælp</a>
   <a href="#">Bliv frivillig</a>
   <a href="#">Om</a>
@@ -12,54 +13,71 @@
 </nav>
 
 <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
   .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    /* background: #333; */
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
+    backdrop-filter: blur(5px) brightness(50%);
+    text-align: center;
+    display: none;
   }
   .menu a {
-    color: white;
     padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid #555;
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+    color: rgb(255, 255, 255);
+    display: block;
+    /* border-bottom: 1px solid #ddd; */
   }
-
+  .menu a:hover {
+    background: #f0f0f0;
+  }
   .burger {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    padding: 15px;
-    /* background: #333; */
+    width: 30px;
+    padding: 10px;
   }
   .burger div {
     width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    margin: 5px 0;
   }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
   @media (min-width: 768px) {
     .burger {
       display: none;
     }
     .menu {
       display: flex;
-      flex-direction: row;
       position: static;
+      flex-direction: row;
+      justify-content: center;
       background: none;
+      backdrop-filter: none;
     }
     .menu a {
       border: none;
       padding: 10px 20px;
-      color: black;
-    }
-    .menu a:hover {
-      background: none;
-      text-decoration: underline;
+      color: white;
     }
   }
 </style>
