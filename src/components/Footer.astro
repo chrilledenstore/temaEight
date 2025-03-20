@@ -1,0 +1,168 @@
+---
+
+---
+
+<section class="bilde"></section>
+
+<section class="footer">
+  <div class="tekst">
+    <div class="mission">
+      <h3>Fonden missionen blandt hjemløse</h3>
+      <p>
+        Vi arbeider for å gi hjemløse og udsatte bedre vilkår. Målet er at gøre
+        op med hjemløshed, ensomhed og psykisk mistrivsel. Arbeidet sker på
+        herberger, væresteder og i frivillige indsatser.
+      </p>
+    </div>
+    <div class="genveje">
+      <h3>Genveje</h3>
+      <p>Home</p>
+      <p>About</p>
+      <p>What we do</p>
+    </div>
+    <div class="kontakt">
+      <h3>Kontakt</h3>
+      <div>
+        <p>Slotsgade 2, 1.sal</p>
+        <p>2200 København N</p>
+      </div>
+      <div>
+        <p>Tlf: 36161113</p>
+        <p>kontakt@weshelter.dk</p>
+        <p>CVR 8096515</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="links">
+    <p>Copyright @ 2025 Fonden missionen blandt hjemløse</p>
+    <div class="ikoner">
+      <div class="ikon1"></div>
+      <div class="ikon2"></div>
+      <div class="ikon3"></div>
+      <div class="ikon4"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bilde {
+    background-image: url("../assets/footer.svg");
+    background-size: cover;
+    background-position: 70%;
+    width: 100%;
+    height: 80px;
+  }
+
+  .tekst {
+    background-color: #1e0a08;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  .tekst p,
+  .tekst h3 {
+    color: #fffbf7;
+  }
+
+  .mission {
+    grid-column: 1/-1;
+  }
+
+  .genveje {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .kontakt {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .kontakt div {
+    padding-bottom: 1em;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.5px solid #fffbf7;
+    background-color: #1e0a08;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .ikoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  .ikon1 {
+    background-image: url("../assets/ikon1.png");
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ikon2 {
+    background-image: url("../assets/ikon2.png");
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ikon3 {
+    background-image: url("../assets/ikon3.png");
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ikon4 {
+    background-image: url("../assets/ikon4.png");
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .links p {
+    color: #fffbf7;
+  }
+
+  @media (width > 716px) {
+    .tekst {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr;
+      gap: 3em;
+    }
+
+    .mission {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .genveje {
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    .kontakt {
+      grid-row: 1;
+      grid-column: -1;
+    }
+
+    .bilde {
+      height: 200px;
+    }
+  }
+</style>
